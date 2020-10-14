@@ -136,10 +136,8 @@ footer .copyright {
                 opacity: 1;
                 transform: translate(0);
                 box-shadow: 0 0 0 rgba(0,0,0,0);
+                max-width: 400px;
             }
         }
-    }
-    .ls_navbar {
-        background: #000;
     }
 }
