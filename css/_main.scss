@@ -129,6 +129,9 @@ footer .copyright {
     color: #fff;
 }
 @media screen and (max-width:992px){
+    :root {
+        font-size: 12px;
+    }
     main {
         .ls_habilidades {
             .ls_tooltip {
