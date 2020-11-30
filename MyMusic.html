@@ -225,7 +225,7 @@
             <div class="input">
             <div class="inner_cell">
                 <div class="input_area">
-            <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Desde dónde empezar a buscar</span>
+            <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Where to start looking from</span>
             <span class="n">lastDataAvailable</span> <span class="o">=</span> <span class="n">history</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">date</span>
             <span class="n">newSearchFrom</span> <span class="o">=</span> <span class="n">lastDataAvailable</span> <span class="o">+</span> <span class="mi">1</span>
             </pre></div>
@@ -251,7 +251,7 @@
             <div class="input">
             <div class="inner_cell">
                 <div class="input_area">
-            <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#páginas a hacer request</span>
+            <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># pages to request</span>
             <span class="n">extra</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;limit=200&amp;from=</span><span class="si">{</span><span class="n">newSearchFrom</span><span class="si">}</span><span class="s1">&amp;format=json&#39;</span>
             <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&amp;user=LauShang&amp;api_key=</span><span class="si">{</span><span class="n">ApiKey</span><span class="si">}</span><span class="s2">&amp;</span><span class="si">{</span><span class="n">extra</span><span class="si">}</span><span class="s2">&quot;</span>
             <span class="n">json_</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
@@ -302,7 +302,7 @@
             <div class="input">
             <div class="inner_cell">
                 <div class="input_area">
-            <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#juntar DataFrames</span>
+            <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#join DataFrames</span>
             <span class="n">newdf</span> <span class="o">=</span> <span class="n">old</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">history</span><span class="p">,</span><span class="n">ignore_index</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
             </pre></div>
             
@@ -315,7 +315,7 @@
             <div class="input">
             <div class="inner_cell">
                 <div class="input_area">
-            <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Exportar</span>
+            <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Export</span>
             <span class="n">newdf</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;myHystory.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
             </pre></div>
             
