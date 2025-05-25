@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lauro Reyes | Interactive CV</title>
+    <link rel="stylesheet" href="css/modern-cv.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </div>
+
+    <header class="hero-section">
+        <div class="particle-container" id="particles-js"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="name" aria-label="Lauro Reyes">
+                    <span class="typing-text">Lauro Reyes</span>
+                </h1>
+                <h2 class="title">Data Analyst</h2>
+                <p class="bio">Data analyst with three years of experience, passionate about data visualization and interpretation. With strong programming foundations for ETL process automation and continuous learning of machine learning models.</p>
+                <div class="social-links">
+                    <a href="https://github.com/LauShang" class="social-link" aria-label="GitHub" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#contact" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <svg class="abstract-shape" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="var(--accent-color)" d="M40.8,-64.5C51.9,-56.3,59.5,-43.7,65.7,-30.5C71.9,-17.4,76.6,-3.7,73.9,8.6C71.3,20.9,61.2,31.8,50.5,40.2C39.9,48.6,28.6,54.5,16.4,59.2C4.1,63.9,-9.2,67.4,-20.9,64.5C-32.6,61.6,-42.7,52.3,-51.5,41.7C-60.3,31.1,-67.8,19.2,-70.1,6.1C-72.5,-7,-69.7,-21.3,-63.2,-33.8C-56.8,-46.3,-46.7,-57,-34.9,-64.7C-23.1,-72.4,-9.6,-77.1,2.9,-81.5C15.3,-85.9,29.7,-89.9,40.8,-84.7Z" transform="translate(100 100)" />
+                </svg>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#skills">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+                <span class="arrow">
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <a href="#" class="logo">LR</a>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <div class="language-selector">
+                        <a href="index.html">ES</a>
+                        <span>/</span>
+                        <a href="indexE.html">EN</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-hex" data-skill="Excel">
+                        <div class="hex-content">
+                            <i class="fas fa-table"></i>
+                            <h3>Excel</h3>
+                        </div>
+                        <div class="skill-details">
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%;">
+                                    <span>Advanced</span>
+                                </div>
+                            </div>
+                            <p>Advanced data analysis, pivot tables, and VBA macros</p>
+                        </div>
+                    </div>
+                    <div class="skill-hex" data-skill="SQL">
+                        <div class="hex-content">
+                            <i class="fas fa-database"></i>
+                            <h3>SQL</h3>
+                        </div>
+                        <div class="skill-details">
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;">
+                                    <span>Advanced</span>
+                                </div>
+                            </div>
+                            <p>Complex queries, database design, and optimization</p>
+                        </div>
+                    </div>
+                    <div class="skill-hex" data-skill="Tableau">
+                        <div class="hex-content">
+                            <i class="fas fa-chart-bar"></i>
+                            <h3>Tableau</h3>
+                        </div>
+                        <div class="skill-details">
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;">
+                                    <span>Advanced</span>
+                                </div>
+                            </div>
+                            <p>Interactive dashboards, data storytelling, and visualizations</p>
+                        </div>
+                    </div>
+                    <div class="skill-hex" data-skill="Python">
+                        <div class="hex-content">
+                            <i class="fab fa-python"></i>
+                            <h3>Python</h3>
+                        </div>
+                        <div class="skill-details">
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;">
+                                    <span>Advanced</span>
+                                </div>
+                            </div>
+                            <p>Pandas, sqlalchemy, sklearn, Matplotlib, PyMongo, Flask</p>
+                        </div>
+                    </div>
+                    <div class="skill-hex" data-skill="JavaScript">
+                        <div class="hex-content">
+                            <i class="fab fa-js"></i>
+                            <h3>JavaScript</h3>
+                        </div>
+                        <div class="skill-details">
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%;">
+                                    <span>Intermediate</span>
+                                </div>
+                            </div>
+                            <p>D3, Plotly, data visualization libraries</p>
+                        </div>
+                    </div>
+                    <div class="skill-hex" data-skill="Data Analysis">
+                        <div class="hex-content">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Data Analysis</h3>
+                        </div>
+                        <div class="skill-details">
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%;">
+                                    <span>Advanced</span>
+                                </div>
+                            </div>
+                            <p>Statistical analysis, trend identification, and business insights</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="additional-skills">
+                    <div class="skill-group">
+                        <h3>Soft Skills</h3>
+                        <ul class="skill-list">
+                            <li><span>Attention to Detail</span></li>
+                            <li><span>Analytical Thinking</span></li>
+                            <li><span>Teamwork</span></li>
+                            <li><span>Problem Solving</span></li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Languages</h3>
+                        <ul class="skill-list">
+                            <li><span>Spanish - Native</span></li>
+                            <li><span>English - Fluent</span></li>
+                            <li><span>Chinese - Intermediate</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2021-2022</div>
+                            <h3>Senior Data Analyst</h3>
+                            <h4>Sony Music Mexico</h4>
+                            <p>In charge of automating ETL processes through a remote server and creating reports on music consumption in Mexico.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2021</div>
+                            <h3>Media and Social Networks Analyst</h3>
+                            <h4>Omnicom Media Group</h4>
+                            <p>Temporary job lasting two months where I analyzed advertising spots related to alcoholic beverages and mentions on social networks with NLP tools.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2017-2019</div>
+                            <h3>Digital Sales Analyst</h3>
+                            <h4>Sony Music</h4>
+                            <p>In this job, my main task was the creation and interpretation of reports on the behavior of music consumption in Mexico on digital platforms.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2016</div>
+                            <h3>Credit and Collection Analyst</h3>
+                            <h4>Estee Lauder</h4>
+                            <p>During this internship, I was responsible for monitoring past due accounts and preparing reports for the credit and collection department.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education-section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>International Foundation Program (IFP)</h3>
+                        <h4>China Campus Network</h4>
+                        <p class="education-date">2019 - 2020</p>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Data Analytics Bootcamp</h3>
+                        <h4>Instituto Tecnológico de Estudios Superiores de Monterrey</h4>
+                        <p class="education-date">2019</p>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3>Bachelor's in Financial Administration</h3>
+                        <h4>Instituto Tecnológico de Estudios Superiores de Monterrey</h4>
+                        <p class="education-date">2013-2017</p>
+                    </div>
+                    <div class="education-card online-courses">
+                        <div class="education-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Online Courses</h3>
+                        <button class="btn-courses">View Courses</button>
+                        <div class="courses-modal">
+                            <div class="modal-content">
+                                <span class="close-modal">&times;</span>
+                                <h3>Online Courses</h3>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Platform</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Curso completo de Estadística descriptiva - RStudio y Python</td>
+                                            <td>Udemy</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Odoo 14 para programadores | nivel básico</td>
+                                            <td>Udemy</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Diseño Web Profesional El Curso Completo, Práctico y desde 0</td>
+                                            <td>Udemy</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tableau Desktop y Tableau Prep desde cero</td>
+                                            <td>Udemy</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="media/music-project.jpg" alt="myMusic Visualization" onerror="this.src='https://via.placeholder.com/400x300?text=myMusic+Project'">
+                        </div>
+                        <div class="project-overlay">
+                            <h3>myMusic</h3>
+                            <p>Visual representation of the music I've listened to since September 2018</p>
+                            <div class="project-tech">
+                                <span>Tableau</span>
+                                <span>Jupyter Notebook</span>
+                            </div>
+                            <a href="MyMusic.html" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="media/data-analysis.jpg" alt="Data Analysis Project" onerror="this.src='https://via.placeholder.com/400x300?text=Data+Analysis'">
+                        </div>
+                        <div class="project-overlay">
+                            <h3>Data Visualization Portfolio</h3>
+                            <p>Collection of data visualization projects and analysis</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>D3.js</span>
+                                <span>Tableau</span>
+                            </div>
+                            <a href="#" class="project-link">Coming Soon</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>email@example.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <p><a href="https://github.com/LauShang" target="_blank">github.com/LauShang</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Mexico</p>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">LR</div>
+                <p class="copyright">© 2025 Lauro Reyes. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/LauShang" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/modern-cv.js"></script>
+</body>
+</html>
