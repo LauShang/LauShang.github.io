@@ -456,48 +456,27 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: var(--spacing-lg);
+    gap: 30px 60px;
     margin-bottom: var(--spacing-xl);
 }
 
 .skill-hex {
     position: relative;
     width: var(--hex-size);
-    height: calc(var(--hex-size) * 0.866);
+    height: var(--hex-size);
     background-color: var(--card-bg);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: calc(var(--hex-size) * 0.433) 0;
+    margin: calc(var(--hex-size) * 0.25) 0;
     box-shadow: 0 5px 20px var(--card-shadow);
     transition: transform var(--transition-normal), box-shadow var(--transition-normal);
     z-index: 1;
-}
-
-.skill-hex::before,
-.skill-hex::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: var(--card-bg);
-    transform-origin: center;
-    transition: background-color var(--transition-normal);
-    z-index: -1;
-}
-
-.skill-hex::before {
-    transform: rotate(60deg);
-}
-
-.skill-hex::after {
-    transform: rotate(-60deg);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
 .skill-hex:hover {
-    transform: translateY(-10px) rotate(0deg);
+    transform: translateY(-10px);
     box-shadow: 0 15px 30px var(--card-shadow);
     z-index: 2;
 }
@@ -539,6 +518,7 @@ section {
     transform: scale(0.8);
     transition: opacity var(--transition-normal), transform var(--transition-normal);
     z-index: 2;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
 .skill-hex:hover .skill-details {

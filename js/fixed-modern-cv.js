@@ -119,10 +119,9 @@ function initSkillsAnimation() {
     const skillHexes = document.querySelectorAll('.skill-hex');
     
     skillHexes.forEach(hex => {
-        // Add slight rotation on hover for 3D effect
+        // Add hover effect for hexagons
         hex.addEventListener('mouseenter', function() {
-            const randomRotation = Math.random() * 10 - 5; // Random value between -5 and 5
-            this.style.transform = `translateY(-10px) rotate(${randomRotation}deg)`;
+            this.style.transform = 'translateY(-10px)';
         });
         
         hex.addEventListener('mouseleave', function() {
@@ -216,7 +215,10 @@ function initParticles() {
                     value: '#536dfe'
                 },
                 shape: {
-                    type: 'circle',
+                    type: 'polygon',
+                    polygon: {
+                        nb_sides: 6
+                    },
                     stroke: {
                         width: 0,
                         color: '#000000'
@@ -233,12 +235,12 @@ function initParticles() {
                     }
                 },
                 size: {
-                    value: 3,
+                    value: 5,
                     random: true,
                     anim: {
                         enable: false,
                         speed: 40,
-                        size_min: 0.1,
+                        size_min: 2,
                         sync: false
                     }
                 },
@@ -410,10 +412,10 @@ document.querySelectorAll('.skill-hex').forEach(hex => {
         const y = e.clientY - rect.top - rect.height / 2;
         
         // Calculate tilt values (max 10 degrees)
-        const tiltX = -(y / rect.height * 20).toFixed(2);
-        const tiltY = (x / rect.width * 20).toFixed(2);
+        const tiltX = -(y / rect.height * 10).toFixed(2);
+        const tiltY = (x / rect.width * 10).toFixed(2);
         
-        // Apply the 3D transform
+        // Apply the 3D transform - reduce intensity for hexagon shape
         this.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateY(-10px)`;
     });
     
