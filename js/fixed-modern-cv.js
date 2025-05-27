@@ -140,14 +140,10 @@ function initSkillsAnimation() {
             const skillProgress = this.getAttribute('data-progress') || '70';
             const skillDescription = this.getAttribute('data-description') || 'Skill description';
             
-            // Update tooltip content
+            // Update tooltip content with skill, level, and description (no progress bar)
             tooltip.innerHTML = `
                 <h3>${skillName}</h3>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="width: ${skillProgress}%;">
-                        <span>${skillLevel}</span>
-                    </div>
-                </div>
+                <p><strong>Level:</strong> ${skillLevel}</p>
                 <p>${skillDescription}</p>
             `;
             

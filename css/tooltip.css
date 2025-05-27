@@ -5,10 +5,10 @@
     opacity: 0;
     background-color: var(--card-bg);
     color: var(--text-color);
-    text-align: center;
-    padding: 15px;
+    text-align: left;
+    padding: 15px 20px;
     border-radius: var(--border-radius-md);
-    max-width: 300px;
+    max-width: 280px;
     box-shadow: 0 5px 15px var(--card-shadow);
     z-index: 1000;
     transition: opacity 0.3s, visibility 0.3s;
@@ -22,34 +22,13 @@
     color: var(--accent-color);
 }
 
-.tooltip .skill-bar {
-    width: 100%;
-    height: 10px;
-    background-color: var(--border-color);
-    border-radius: 5px;
-    margin-bottom: var(--spacing-md);
-    overflow: hidden;
-}
-
-.tooltip .skill-progress {
-    height: 100%;
-    background-color: var(--accent-color);
-    border-radius: 5px;
-    position: relative;
-}
-
-.tooltip .skill-progress span {
-    position: absolute;
-    right: 5px;
-    top: -18px;
-    font-size: 0.75rem;
-    color: var(--text-color);
-    font-weight: 600;
-}
-
 .tooltip p {
-    margin-bottom: 0;
+    margin-bottom: 8px;
     font-size: 0.9rem;
+}
+
+.tooltip p:last-child {
+    margin-bottom: 0;
 }
 
 /* Arrow for the tooltip */
