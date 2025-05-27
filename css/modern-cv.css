@@ -526,6 +526,8 @@ section {
     transform: scale(1);
 }
 
+/* Removed the .skill-details CSS since we're using tooltips now */
+
 .skill-bar {
     width: 100%;
     height: 10px;

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/tooltip.css">
 </head>
 <body>
     <div class="theme-toggle" aria-label="Toggle dark mode">
@@ -82,88 +83,40 @@
             <div class="container">
                 <h2 class="section-title">Skills</h2>
                 <div class="skills-grid">
-                    <div class="skill-hex" data-skill="Excel">
+                    <div class="skill-hex" data-skill="Excel" data-level="Advanced" data-progress="85" data-description="Advanced data analysis, pivot tables, and VBA macros">
                         <div class="hex-content">
                             <i class="fas fa-table"></i>
                             <h3>Excel</h3>
                         </div>
-                        <div class="skill-details">
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%;">
-                                    <span>Advanced</span>
-                                </div>
-                            </div>
-                            <p>Advanced data analysis, pivot tables, and VBA macros</p>
-                        </div>
                     </div>
-                    <div class="skill-hex" data-skill="SQL">
+                    <div class="skill-hex" data-skill="SQL" data-level="Advanced" data-progress="80" data-description="Complex queries, database design, and optimization">
                         <div class="hex-content">
                             <i class="fas fa-database"></i>
                             <h3>SQL</h3>
                         </div>
-                        <div class="skill-details">
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%;">
-                                    <span>Advanced</span>
-                                </div>
-                            </div>
-                            <p>Complex queries, database design, and optimization</p>
-                        </div>
                     </div>
-                    <div class="skill-hex" data-skill="Tableau">
+                    <div class="skill-hex" data-skill="Tableau" data-level="Advanced" data-progress="80" data-description="Interactive dashboards, data storytelling, and visualizations">
                         <div class="hex-content">
                             <i class="fas fa-chart-bar"></i>
                             <h3>Tableau</h3>
                         </div>
-                        <div class="skill-details">
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%;">
-                                    <span>Advanced</span>
-                                </div>
-                            </div>
-                            <p>Interactive dashboards, data storytelling, and visualizations</p>
-                        </div>
                     </div>
-                    <div class="skill-hex" data-skill="Python">
+                    <div class="skill-hex" data-skill="Python" data-level="Advanced" data-progress="85" data-description="Pandas, sqlalchemy, sklearn, Matplotlib, PyMongo, Flask">
                         <div class="hex-content">
                             <i class="fab fa-python"></i>
                             <h3>Python</h3>
                         </div>
-                        <div class="skill-details">
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%;">
-                                    <span>Advanced</span>
-                                </div>
-                            </div>
-                            <p>Pandas, sqlalchemy, sklearn, Matplotlib, PyMongo, Flask</p>
-                        </div>
                     </div>
-                    <div class="skill-hex" data-skill="JavaScript">
+                    <div class="skill-hex" data-skill="JavaScript" data-level="Intermediate" data-progress="60" data-description="D3, Plotly, data visualization libraries">
                         <div class="hex-content">
                             <i class="fab fa-js"></i>
                             <h3>JavaScript</h3>
                         </div>
-                        <div class="skill-details">
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 60%;">
-                                    <span>Intermediate</span>
-                                </div>
-                            </div>
-                            <p>D3, Plotly, data visualization libraries</p>
-                        </div>
                     </div>
-                    <div class="skill-hex" data-skill="Data Analysis">
+                    <div class="skill-hex" data-skill="Data Analysis" data-level="Advanced" data-progress="90" data-description="Statistical analysis, data cleaning, ETL processes, insights generation">
                         <div class="hex-content">
                             <i class="fas fa-chart-line"></i>
                             <h3>Data Analysis</h3>
-                        </div>
-                        <div class="skill-details">
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%;">
-                                    <span>Advanced</span>
-                                </div>
-                            </div>
-                            <p>Statistical analysis, trend identification, and business insights</p>
                         </div>
                     </div>
                 </div>
@@ -410,5 +363,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="js/fixed-modern-cv.js"></script>
+    <script src="js/tooltip-handler.js"></script>
 </body>
 </html>

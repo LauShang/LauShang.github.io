@@ -117,15 +117,76 @@ function initMobileMenu() {
 // Skills Animation
 function initSkillsAnimation() {
     const skillHexes = document.querySelectorAll('.skill-hex');
+    let tooltip = null;
+    
+    // Create tooltip element if it doesn't exist
+    if (!document.querySelector('.tooltip')) {
+        tooltip = document.createElement('div');
+        tooltip.className = 'tooltip';
+        document.body.appendChild(tooltip);
+    } else {
+        tooltip = document.querySelector('.tooltip');
+    }
     
     skillHexes.forEach(hex => {
         // Add hover effect for hexagons
-        hex.addEventListener('mouseenter', function() {
+        hex.addEventListener('mouseenter', function(e) {
             this.style.transform = 'translateY(-10px)';
+            
+            // Get skill details
+            const skillName = this.getAttribute('data-skill');
+            const skillIcon = this.querySelector('.hex-content i').className;
+            const skillLevel = this.getAttribute('data-level') || 'Intermediate';
+            const skillProgress = this.getAttribute('data-progress') || '70';
+            const skillDescription = this.getAttribute('data-description') || 'Skill description';
+            
+            // Update tooltip content
+            tooltip.innerHTML = `
+                <h3>${skillName}</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: ${skillProgress}%;">
+                        <span>${skillLevel}</span>
+                    </div>
+                </div>
+                <p>${skillDescription}</p>
+            `;
+            
+            // Position the tooltip
+            const hexRect = this.getBoundingClientRect();
+            const tooltipRect = tooltip.getBoundingClientRect();
+            
+            const top = hexRect.top - tooltipRect.height - 20;
+            const left = hexRect.left + (hexRect.width / 2) - (tooltipRect.width / 2);
+            
+            // Check if the tooltip would go off the top of the screen
+            if (top < 10) {
+                tooltip.style.top = (hexRect.bottom + 20) + 'px';
+                tooltip.classList.add('top');
+            } else {
+                tooltip.style.top = top + 'px';
+                tooltip.classList.remove('top');
+            }
+            
+            tooltip.style.left = left + 'px';
+            tooltip.classList.add('visible');
         });
         
         hex.addEventListener('mouseleave', function() {
             this.style.transform = '';
+            tooltip.classList.remove('visible');
+        });
+        
+        // Add 3D tilt effect
+        hex.addEventListener('mousemove', function(e) {
+            const rect = this.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+            
+            // Calculate tilt values (max 5 degrees - reduced for subtlety)
+            const tiltX = -(y / rect.height * 5).toFixed(2);
+            const tiltY = (x / rect.width * 5).toFixed(2);
+            
+            this.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateY(-10px)`;
         });
     });
 }
