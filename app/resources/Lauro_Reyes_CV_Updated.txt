@@ -1,0 +1,77 @@
+
+LAURO REYES
+Data Scientist
+
+Data scientist with expertise in statistical modeling, machine learning, and data pipeline automation. Skilled in Python, SQL, and Tableau to deliver actionable insights and scalable solutions. Experienced in clustering, distributed computing with PySpark, and stakeholder-focused reporting across the music and media industries.
+
+GitHub: https://github.com/LauShang
+LinkedIn: https://www.linkedin.com/in/lauro-reyes-64985bb5/
+
+SKILLS
+
+- Excel – Advanced data analysis, pivot tables, and VBA macros
+- SQL – Complex queries, performance optimization, efficient databases
+- Tableau – Interactive dashboards, data storytelling
+- Python – Data science, machine learning, Flask, Pandas, scikit-learn
+- JavaScript – Interactive visualizations (D3.js, Plotly), Flask integration
+- Data Analysis – Statistical methods, data cleaning, business interpretation
+- Big Data – Scalable pipelines (AWS EC2), PySpark, ETL optimization
+- Statistics – Bayesian inference, causal analysis (STAN)
+
+Soft Skills:
+Attention to Detail, Analytical Thinking, Teamwork, Problem Solving
+
+Languages:
+Spanish (Native), English (Fluent), Chinese (Intermediate)
+
+PROFESSIONAL EXPERIENCE
+
+Senior Data Scientist – Sony Music Mexico
+2021–Present
+- Managed data pipelines and remote servers for music analytics
+- Built clustering models for customers and artists
+- Automated statistical reporting for stakeholders
+
+Media and Social Networks Analyst – Omnicom Media Group
+2021
+- Analyzed advertising campaigns for alcohol brands
+- Built NLP tools for social media monitoring and sentiment tracking
+
+Digital Sales Analyst – Sony Music
+2017–2019
+- Created and interpreted music consumption reports on digital platforms
+
+Credit and Collection Intern – Estee Lauder
+2016
+- Monitored past due accounts and prepared departmental reports
+
+EDUCATION
+
+- Master in Data Science – ITAM, 2023–2025
+- International Foundation Program (IFP) – China Campus Network, 2019–2020
+- Data Analytics Bootcamp – Tecnológico de Monterrey, 2019
+- Bachelor's in Financial Administration – Tecnológico de Monterrey, 2013–2017
+
+ONLINE COURSES
+
+- Curso completo de Estadística descriptiva - RStudio y Python (Udemy)
+- Odoo 14 para programadores | nivel básico (Udemy)
+- Diseño Web Profesional desde 0 (Udemy)
+- Tableau Desktop y Tableau Prep desde cero (Udemy)
+
+PROJECTS
+
+Personal Knowledge RAG
+Flask app for managing and retrieving personal knowledge
+Tech: RAG Architecture, LLM, LangChain
+GitHub: https://github.com/LauShang/conocimiento_personal_RAG
+
+Distributed Computing - Quién es Quién
+Big Data analysis on 28GB dataset
+Tech: PySpark, AWS EC2, Python
+GitHub: https://github.com/LauShang/quien_es_quien_aws
+
+Prediction for Machinery Cutting
+R + Docker app predicting energy consumption with Random Forest
+Tech: R, Docker, Shiny
+GitHub: https://github.com/LauShang/PF_ESTCOMP
